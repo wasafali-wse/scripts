@@ -24,7 +24,7 @@ def create_backup():
 
     # Generate a timestamped filename
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    backup_file = os.path.join(BACKUP_DIR, f"{DB_NAME}_backup_{timestamp}.sql")
+    backup_file = os.path.join(BACKUP_DIR, f"{DB_NAME}_backup.sql")
 
     # Construct the mysqldump command
     command = [
