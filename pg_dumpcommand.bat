@@ -1,7 +1,7 @@
 @echo off
 cd C:\database\script
 echo It's time to back up the data!
-python postgres_back.py
+python postgres_backup.py
 
 if %ERRORLEVEL% neq 0 (
     echo Backup failed with error code %ERRORLEVEL%!
